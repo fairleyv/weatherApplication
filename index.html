@@ -14,82 +14,91 @@
         </div>
     </header>
     <main>
-        <div>
-            <search>
-                <form id="searchForm">
-                    <label class="" for="cityQuery">Search for a city:</label>
-                    <input id="cityQuery" type="text" placeholder="Find your city!" class = "">
-                </form>
-            </search>
-            <divider>
-                <hr class="">
-            </divider>
-            <div id="previousSearches" class="">
-                <div id="cityBtns"></div>
-            </div>
-        </div>
-            <container id="currentWeather" class="">
-                <h2 id="searchedCityName">Placeholder name (date)</h2>
-                <h4>Temp: </h4>
-                <h4>Wind: </h4>
-                <h4>Humidity: </h4>
-            </container>
-            <div id="weather">
-                <h3>5-Day Forecast:</h3>
-                <div id="weatherCards">
-                    <div class="card text-bg-primary mb-3" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="text-white">
-                                <h5 class="card-title">Date</h5>
-                                <p class="card-text text-light">Icon</p>
-                                <p class="card-text">Temp: </p>
-                                <p class="card-text">Wind: </p>
-                                <p class="card-text">Humidity: </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <search>
+                        <form id="searchForm" class="mb-3">
+                            <label class="" for="cityQuery">Search for a city:</label>
+                            <input id="cityQuery" type="text" placeholder="Find your city!" class = "">
+                            <button class ="btn btn-primary" type="button">Search</button>
+                        </form>
+                    </search>
+                    <divider>
+                        <hr class="">
+                    </divider>
+                    <div id="previousSearches" class="">
+                        <div id="cityBtns"></div>
+                    </div>
+                </div>
+            <div class="col-md-8">
+                <container id="currentWeather" class="card mb-3">
+                    <div class="card-body">
+                        <h2 id="searchedCityName" class="card-title">Placeholder name (date)</h2>
+                        <h4 class="card-text">Temp: </h4>
+                        <h4 class="card-text">Wind: </h4>
+                        <h4 class="card-text">Humidity: </h4>
+                    </div>
+                </container>
+                    <h3>5-Day Forecast:</h3>
+                    <div id="weatherCards" class="d-flex">
+                        <div class="card text-bg-primary me-3" style="width: 18rem;">
+                            <div class="card-body">
+                                <div class="text-white">
+                                    <h5 class="card-title">Date</h5>
+                                    <p class="card-text text-light">Icon</p>
+                                    <p class="card-text">Temp: </p>
+                                    <p class="card-text">Wind: </p>
+                                    <p class="card-text">Humidity: </p>
+                                </div>
                             </div>
                         </div>
-                      <div class="card text-bg-primary mb-3" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="text-white">
-                                <h5 class="card-title">Date</h5>
-                                <p class="card-text text-light">Icon</p>
-                                <p class="card-text">Temp: </p>
-                                <p class="card-text">Wind: </p>
-                                <p class="card-text">Humidity: </p>
+                          <div class="card text-bg-primary me-3" style="width: 18rem;">
+                            <div class="card-body">
+                                <div class="text-white">
+                                    <h5 class="card-title">Date</h5>
+                                    <p class="card-text text-light">Icon</p>
+                                    <p class="card-text">Temp: </p>
+                                    <p class="card-text">Wind: </p>
+                                    <p class="card-text">Humidity: </p>
+                                </div>
                             </div>
                         </div>
-                      <div class="card text-bg-primary mb-3" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="text-white">
-                                <h5 class="card-title">Date</h5>
-                                <p class="card-text text-light">Icon</p>
-                                <p class="card-text">Temp: </p>
-                                <p class="card-text">Wind: </p>
-                                <p class="card-text">Humidity: </p>
+                          <div class="card text-bg-primary me-3" style="width: 18rem;">
+                            <div class="card-body">
+                                <div class="text-white">
+                                    <h5 class="card-title">Date</h5>
+                                    <p class="card-text text-light">Icon</p>
+                                    <p class="card-text">Temp: </p>
+                                    <p class="card-text">Wind: </p>
+                                    <p class="card-text">Humidity: </p>
+                                </div>
                             </div>
                         </div>
-                      <div class="card text-bg-primary mb-3" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="text-white">
-                                <h5 class="card-title">Date</h5>
-                                <p class="card-text text-light">Icon</p>
-                                <p class="card-text">Temp: </p>
-                                <p class="card-text">Wind: </p>
-                                <p class="card-text">Humidity: </p>
+                          <div class="card text-bg-primary me-3" style="width: 18rem;">
+                            <div class="card-body">
+                                <div class="text-white">
+                                    <h5 class="card-title">Date</h5>
+                                    <p class="card-text text-light">Icon</p>
+                                    <p class="card-text">Temp: </p>
+                                    <p class="card-text">Wind: </p>
+                                    <p class="card-text">Humidity: </p>
+                                </div>
                             </div>
                         </div>
-                      <div class="card text-bg-primary mb-3" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="text-white">
-                                <h5 class="card-title">Date</h5>
-                                <p class="card-text text-light">Icon</p>
-                                <p class="card-text">Temp: </p>
-                                <p class="card-text">Wind: </p>
-                                <p class="card-text">Humidity: </p>
+                          <div class="card bg-primary text-white me-3" style="width: 18rem;">
+                            <div class="card-body">
+                                    <h5 class="card-title">Date</h5>
+                                    <p class="card-text text-light">Icon</p>
+                                    <p class="card-text">Temp: </p>
+                                    <p class="card-text">Wind: </p>
+                                    <p class="card-text">Humidity: </p>
                             </div>
-                        </div>
-                      </div>
+                          </div>
                 </div>
             </div>
+        </div>
+        </div>
     </main>
     <script src="assets\script.js"></script>
 </body>
