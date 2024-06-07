@@ -31,11 +31,39 @@ let d5Temp = document.getElementById('d5Temp');
 let d5Wind = document.getElementById('d5Wind');
 let d5Humidity = document.getElementById('d5Humidity');
 
+
+function populatePreviousSearches() {
+    const previousSearches = JSON.parse(localStorage.getItem('PreviousSearches')) || [];
+    const cityBtns = document.getElementById('cityBtns');
+    cityBtns.innherHTML = '';
+
+    const uniqueSearches = [...new Set(previousSearches)].slice(-10);
+
+    uniqueSearches.forEach(city => {
+        const btn = document.createElement('button');
+        btn.textContent = city;
+        btn.classList.add('btn', 'btn-primary', 'mb-2');
+        btn.addEventListener('click', () => getWeather(city));
+        cityBtns.appendChild(btn);
+    });
+};
+
+window.addEventListener('DOMContentLoaded', populatePreviousSearches);
+
 function handleFormSubmit(event) {
     event.preventDefault();
 
     const cityQuery = document.getElementById('cityQuery').value;
     getWeather(cityQuery);
+
+    const previousSearches = JSON.parse(localStorage.getItem('PreviousSearches')) || [];
+
+    if(!previousSearches.includes(cityQuery)) {
+        previousSearches.push(cityQuery);
+    localStorage.setItem('PreviousSearches', JSON.stringify(previousSearches));
+    }
+
+    populatePreviousSearches();
 
     return false;}
 
