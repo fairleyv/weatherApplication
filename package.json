@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "dayjs": "^1.11.11",
     "dotenv": "^16.4.5"
   },
