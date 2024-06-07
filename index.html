@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel=""stylesheet" href="assets\bootstrap\css\bootstrap.css">
+    <link rel="stylesheet" href="assets\bootstrap\css\bootstrap.css">
     <title>Weather Application</title>
 <script src="assets\bootstrap\js\bootstrap.js"></script>
 </head>
@@ -14,12 +14,76 @@
         </div>
     </header>
     <main>
-        <search>
-            <form id="searchForm">
-                <label class="" for="searchedCity">Search for a city:</label>
-                <input id="searchedCity" type="text" placeholder="Find your city!" class = "">
-            </form>
-        </search>
+        <div>
+            <search>
+                <form id="searchForm">
+                    <label class="" for="cityQuery">Search for a city:</label>
+                    <input id="cityQuery" type="text" placeholder="Find your city!" class = "">
+                </form>
+            </search>
+            <divider>
+                <hr class="">
+            </divider>
+            <div id="previousSearches" class="">
+                <div id="cityBtns"></div>
+            </div>
+        </div>
+            <container id="">
+                <h2 id="searchedCityName"></h2>
+                <h4>Temp: </h4>
+                <h4>Wind: </h4>
+                <h4>Humidity: </h4>
+            </container>
+            <div id="weather">
+                <h3>5-Day Forecast:</h3>
+                <div id="weatherCards">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Date</h5>
+                          <p class="card-text">Icon</p>
+                          <p class="card-text">Temp: </p>
+                          <p class="card-text">Wind: </p>
+                          <p class="card-text">Humidity: </p>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Date</h5>
+                          <p class="card-text">Icon</p>
+                          <p class="card-text">Temp: </p>
+                          <p class="card-text">Wind: </p>
+                          <p class="card-text">Humidity: </p>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Date</h5>
+                          <p class="card-text">Icon</p>
+                          <p class="card-text">Temp: </p>
+                          <p class="card-text">Wind: </p>
+                          <p class="card-text">Humidity: </p>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Date</h5>
+                          <p class="card-text">Icon</p>
+                          <p class="card-text">Temp: </p>
+                          <p class="card-text">Wind: </p>
+                          <p class="card-text">Humidity: </p>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Date</h5>
+                          <p class="card-text">Icon</p>
+                          <p class="card-text">Temp: </p>
+                          <p class="card-text">Wind: </p>
+                          <p class="card-text">Humidity: </p>
+                        </div>
+                      </div>
+                </div>
+            </div>
     </main>
     <script src="assets\script.js"></script>
 </body>
